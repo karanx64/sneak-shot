@@ -1,9 +1,10 @@
-import { useState } from "react";
+import React from "react";
+import Header from "./components/header/Header";
 
 function App() {
   return (
     <>
-      <h1>Coming soon</h1>
+      <Header />
     </>
   );
 }
