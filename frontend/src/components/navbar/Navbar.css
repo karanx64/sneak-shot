@@ -1,3 +1,7 @@
+.FA-icon {
+    cursor: pointer;
+}
+
 .nav {
     padding: 10px;
     display: flex;
@@ -5,13 +9,18 @@
     align-items: center;
     padding: 1.5rem 10%;
     border-bottom: 0.2rem solid yellowgreen;
-
 }
+
+
 
 .nav-links {
     display: flex;
     align-items: center;
 
+}
+
+.nav-mobile {
+    display: none;
 }
 
 .nav-links li {
@@ -68,7 +77,7 @@
     }
 
     .nav-btn-menu {
-        display: block;
+        display: inline-block;
         font-size: 1.5rem;
         cursor: pointer;
 
@@ -78,11 +87,8 @@
         display: none;
     }
 
-    .nav-btn-user {
-        display: none;
-    }
-
-    .nav-btn-wishlist {
+    .nav-icons>.nav-btn-user,
+    .nav-icons>.nav-btn-wishlist {
         display: none;
     }
 
@@ -98,5 +104,32 @@
         position: absolute;
         left: 0.4rem;
 
+    }
+
+    /* mobile nav menu */
+
+    .nav-mobile {
+        position: absolute;
+        width: 40%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: yellowgreen;
+        padding: 2rem;
+    }
+
+
+    .nav-menu-showed {
+        display: block;
+    }
+
+    .nav-mobile li {
+        list-style: none;
+    }
+
+    .nav-mobile>.icon-row {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
     }
 }
