@@ -1,3 +1,13 @@
+:root {
+
+    /* colors */
+    --ss-color-primary: rgb(105, 0, 0);
+
+    /* transition */
+    --ss-tran-primary: 0.3s;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,5 +16,5 @@
 }
 
 body {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
 }

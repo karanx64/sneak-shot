@@ -1,12 +1,12 @@
 .FA-icon {
     cursor: pointer;
-    transition: .3s;
+    transition: var(--ss-tran-primary);
 }
 
 .FA-icon:hover {
     transform: scale(1.2);
-    transition: .3s;
-    color: yellowgreen;
+    transition: var(--ss-tran-primary);
+    color: var(--ss-color-primary);
 }
 
 .nav {
@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 10%;
-    border-bottom: 0.2rem solid yellowgreen;
+    border-bottom: 0.2rem solid var(--ss-color-primary);
 }
 
 
@@ -34,13 +34,15 @@
     list-style: none;
     margin: 0 20px;
     text-transform: uppercase;
-    transition: .3s;
+    transition: var(--ss-tran-primary);
     cursor: pointer;
 }
 
 .nav-links li:hover {
-    transform: scale(1.1);
-    color: greenyellow;
+    box-sizing: border-box;
+    transform: scale(1.2);
+    /* transform: scale(1.1); */
+    color: var(--ss-color-primary);
 
 }
 
@@ -48,7 +50,7 @@
     z-index: -5;
     font-size: 1.5rem;
     font-weight: 900;
-    color: yellowgreen;
+    color: var(var(--ss-color-primary));
 }
 
 .nav-icons>* {
@@ -98,7 +100,7 @@
 
     .nav-btn-menu {
         display: inline-block;
-        font-size: 1.5rem;
+        font-size: 1rem;
         cursor: pointer;
 
     }
@@ -134,26 +136,29 @@
         top: 0;
         bottom: 0;
         right: 0;
-        background-color: yellowgreen;
+        background-color: var(--ss-color-primary);
         padding: 2rem;
         z-index: 5;
+        transition: 1s;
     }
 
 
     .nav-menu-showed {
+
         display: block;
+        transition: 1s;
+
     }
 
     .nav-mobile li {
         list-style: none;
-        transition: .3s;
+        transition: var(--ss-tran-primary);
         cursor: pointer;
     }
 
     .nav-mobile li:hover {
         transform: scale(1.1);
-        background-color: white;
-        padding: 5px;
+        color: white;
     }
 
     .nav-mobile>.icon-row {
@@ -164,7 +169,7 @@
 
     .nav-mobile .FA-icon:hover {
         transform: scale(1.2);
-        transition: .3s;
+        transition: var(--ss-tran-primary);
         color: white;
     }
 
